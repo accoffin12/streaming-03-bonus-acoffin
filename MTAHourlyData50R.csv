@@ -1,50 +1,50 @@
-﻿transit_date,transit_time,transit_mode,station_complex_id,station_complex,borough,payment_method,fare_class_category,ridership,transfers,latitude,longitude,Georeference
-7/5/2022,13:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 30-Day,6,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-7/22/2022,18:00,subway,445,Pelham Pkwy (5),Bronx,omny,OMNY - Full Fare,23,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-7/15/2022,14:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 30-Day,16,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-4/19/2022,6:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 30-Day,28,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-12/1/2022,6:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,17,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-4/5/2022,19:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Students,5,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-7/26/2022,22:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,2,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-8/18/2022,20:00,subway,445,Pelham Pkwy (5),Bronx,omny,OMNY - Full Fare,2,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-9/3/2022,23:00,subway,445,Pelham Pkwy (5),Bronx,omny,OMNY - Full Fare,1,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-4/25/2022,9:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Students,8,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-4/14/2022,11:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Students,3,1,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-9/25/2022,19:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 30-Day,2,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-7/27/2022,20:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,7,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-10/18/2022,20:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Students,3,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-12/29/2022,14:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Students,6,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-11/20/2022,17:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,4,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-7/4/2022,20:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 30-Day,3,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-2/15/2022,11:00,subway,445,Pelham Pkwy (5),Bronx,omny,OMNY - Full Fare,17,3,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-3/29/2022,22:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 30-Day,1,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-6/27/2022,8:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,11,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-5/16/2022,21:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,1,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-12/3/2022,23:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,1,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-6/7/2022,9:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,6,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-2/12/2022,12:00,subway,445,Pelham Pkwy (5),Bronx,omny,OMNY - Full Fare,15,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-10/2/2022,19:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,2,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-7/28/2022,13:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Students,9,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-5/8/2022,21:00,subway,445,Pelham Pkwy (5),Bronx,omny,OMNY - Full Fare,6,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-12/20/2022,23:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,1,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-3/28/2022,9:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 30-Day,11,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-4/5/2022,14:00,subway,445,Pelham Pkwy (5),Bronx,omny,OMNY - Full Fare,27,2,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-2/19/2022,8:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,9,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-4/4/2022,13:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Students,15,1,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-4/14/2022,18:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Students,8,1,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-9/28/2022,20:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,8,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-9/11/2022,14:00,subway,445,Pelham Pkwy (5),Bronx,omny,OMNY - Full Fare,8,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-6/22/2022,5:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 30-Day,12,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-9/15/2022,18:00,subway,445,Pelham Pkwy (5),Bronx,omny,OMNY - Full Fare,11,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-12/20/2022,7:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 30-Day,33,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-6/12/2022,19:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 30-Day,1,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-7/4/2022,2:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,1,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-12/25/2022,12:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,6,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-9/29/2022,8:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,16,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-4/24/2022,13:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 7-Day,6,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-2/25/2022,19:00,subway,445,Pelham Pkwy (5),Bronx,omny,OMNY - Full Fare,4,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-2/7/2022,18:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 30-Day,9,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-3/3/2022,10:00,subway,445,Pelham Pkwy (5),Bronx,omny,OMNY - Full Fare,18,1,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-7/14/2022,7:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Students,8,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-4/28/2022,15:00,subway,445,Pelham Pkwy (5),Bronx,metrocard,Metrocard - Unlimited 30-Day,9,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
-3/26/2022,7:00,subway,445,Pelham Pkwy (5),Bronx,omny,OMNY - Full Fare,5,0,40.8589859,-73.85536194,POINT (-73.85536193847656 40.858985900878906)
+﻿transit_date,transit_time,transit_mode,station_complex_id,station_complex,borough,ridership
+7/5/2022,13:00,subway,445,Pelham Pkwy (5),Bronx,6
+7/22/2022,18:00,subway,445,Pelham Pkwy (5),Bronx,23
+7/15/2022,14:00,subway,445,Pelham Pkwy (5),Bronx,16
+4/19/2022,6:00,subway,445,Pelham Pkwy (5),Bronx,28
+12/1/2022,6:00,subway,445,Pelham Pkwy (5),Bronx,17
+4/5/2022,19:00,subway,445,Pelham Pkwy (5),Bronx,5
+7/26/2022,22:00,subway,445,Pelham Pkwy (5),Bronx,2
+8/18/2022,20:00,subway,445,Pelham Pkwy (5),Bronx,2
+9/3/2022,23:00,subway,445,Pelham Pkwy (5),Bronx,1
+4/25/2022,9:00,subway,445,Pelham Pkwy (5),Bronx,8
+4/14/2022,11:00,subway,445,Pelham Pkwy (5),Bronx,3
+9/25/2022,19:00,subway,445,Pelham Pkwy (5),Bronx,2
+7/27/2022,20:00,subway,445,Pelham Pkwy (5),Bronx,7
+10/18/2022,20:00,subway,445,Pelham Pkwy (5),Bronx,3
+12/29/2022,14:00,subway,445,Pelham Pkwy (5),Bronx,6
+11/20/2022,17:00,subway,445,Pelham Pkwy (5),Bronx,4
+7/4/2022,20:00,subway,445,Pelham Pkwy (5),Bronx,3
+2/15/2022,11:00,subway,445,Pelham Pkwy (5),Bronx,17
+3/29/2022,22:00,subway,445,Pelham Pkwy (5),Bronx,1
+6/27/2022,8:00,subway,445,Pelham Pkwy (5),Bronx,11
+5/16/2022,21:00,subway,445,Pelham Pkwy (5),Bronx,1
+12/3/2022,23:00,subway,445,Pelham Pkwy (5),Bronx,1
+6/7/2022,9:00,subway,445,Pelham Pkwy (5),Bronx,6
+2/12/2022,12:00,subway,445,Pelham Pkwy (5),Bronx,15
+10/2/2022,19:00,subway,445,Pelham Pkwy (5),Bronx,2
+7/28/2022,13:00,subway,445,Pelham Pkwy (5),Bronx,9
+5/8/2022,21:00,subway,445,Pelham Pkwy (5),Bronx,6
+12/20/2022,23:00,subway,445,Pelham Pkwy (5),Bronx,1
+3/28/2022,9:00,subway,445,Pelham Pkwy (5),Bronx,11
+4/5/2022,14:00,subway,445,Pelham Pkwy (5),Bronx,27
+2/19/2022,8:00,subway,445,Pelham Pkwy (5),Bronx,9
+4/4/2022,13:00,subway,445,Pelham Pkwy (5),Bronx,15
+4/14/2022,18:00,subway,445,Pelham Pkwy (5),Bronx,8
+9/28/2022,20:00,subway,445,Pelham Pkwy (5),Bronx,8
+9/11/2022,14:00,subway,445,Pelham Pkwy (5),Bronx,8
+6/22/2022,5:00,subway,445,Pelham Pkwy (5),Bronx,12
+9/15/2022,18:00,subway,445,Pelham Pkwy (5),Bronx,11
+12/20/2022,7:00,subway,445,Pelham Pkwy (5),Bronx,33
+6/12/2022,19:00,subway,445,Pelham Pkwy (5),Bronx,1
+7/4/2022,2:00,subway,445,Pelham Pkwy (5),Bronx,1
+12/25/2022,12:00,subway,445,Pelham Pkwy (5),Bronx,6
+9/29/2022,8:00,subway,445,Pelham Pkwy (5),Bronx,16
+4/24/2022,13:00,subway,445,Pelham Pkwy (5),Bronx,6
+2/25/2022,19:00,subway,445,Pelham Pkwy (5),Bronx,4
+2/7/2022,18:00,subway,445,Pelham Pkwy (5),Bronx,9
+3/3/2022,10:00,subway,445,Pelham Pkwy (5),Bronx,18
+7/14/2022,7:00,subway,445,Pelham Pkwy (5),Bronx,8
+4/28/2022,15:00,subway,445,Pelham Pkwy (5),Bronx,9
+3/26/2022,7:00,subway,445,Pelham Pkwy (5),Bronx,5
