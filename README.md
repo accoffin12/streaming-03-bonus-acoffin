@@ -1,6 +1,6 @@
 # streaming-03-bonus-acoffin
 Created by A. C. Coffin
-Date: May 2024
+Date: 16 May 2024
 Northwest Missouri State University
 Data Streaming 44671-80/81
 Dr. Case
@@ -69,7 +69,9 @@ MTA Data is readily available from New York State from their Portal.
 NYC MTA Data for Subways: https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data
 
 ## Modifications of Data
-The source contained 12 columns, however the MTAHourlyData50R.csv has 13 columns. In this instance the column originally called "transit_time" has been split, the source had both time and date in the same column. This was addressed by separating time and date into two specific columns, adding a 13th column. The data has also been trimmed from its total of 56.3 million rows to 50 rows. Additionally, time was converted to military time for the sake of loading into the database.
+The source contained 12 columns, however the MTAHourlyData50R.csv has 7 columns. In this instance the column originally called "transit_time" has been split, the source had both time and date in the same column. This was addressed by separating time and date into two specific columns, adding a column. The data has also been trimmed from its total of 56.3 million rows to 50 rows. Additionally, time was converted to military time for the sake of loading into the database. 
+
+The columns "payment", "fare", "transfers", "lat", "log" and "geo reference" have been removed as they were not necessary to stream. In this instance our interest is with "transit_date","transit_time", "transit_mode", "station_complex_id", "station_complex,borough" and "ridership". Essentially streaming the number of people who take specific trains, for certain stations in different boroughs during the day. This data is shorter and easier to stream than the original csv. 
 
 # Creating an Enviroment & Installs
 RabbitMQ requires the Pika Libarary in order to function, this is addressed through the creation of an enviroment and installing it. Use the following command to create an envrioment, when promted in VS Code set the .env to a workspace folder, select yes.
@@ -268,3 +270,9 @@ Similar to the emitter there are several Exceptions in place to both close the s
 ![Run with Consumer and first Ouput](/ScreenShots/MTA_outputfile1.PNG)
 
 # Results:
+
+# Resources:
+NYC Open Portal: https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data
+Pika Information: https://github.com/pika/pika
+RabbitMQ documentation: https://www.rabbitmq.com/docs
+RabbitMQ Tutorials: https://www.rabbitmq.com/tutorials
