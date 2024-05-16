@@ -272,7 +272,7 @@ Similar to the emitter there are several Exceptions in place to both close the s
 # Results:
 
 # Resources:
-NYC Open Portal: https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data
-Pika Information: https://github.com/pika/pika
-RabbitMQ documentation: https://www.rabbitmq.com/docs
-RabbitMQ Tutorials: https://www.rabbitmq.com/tutorials
+1. NYC Open Portal: https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data
+2. Pika Information: https://github.com/pika/pika
+3. RabbitMQ documentation: https://www.rabbitmq.com/docs
+4. RabbitMQ Tutorials: https://www.rabbitmq.com/tutorials
