@@ -25,7 +25,7 @@ logger, logname = setup_logger(__file__)
 
 output_file_name = "MTA_out.txt"
 
-
+# Creating function to generate the Output File:
 def callback_func(ch, method, properties, body):
     with open('MTA_output.txt', 'a') as file:
         file.write(body.decode() + '\n') # write message to file
