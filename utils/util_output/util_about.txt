@@ -1,0 +1,27 @@
+
+======================================================================
+======================================================================
+ Welcome to the NW Python Debugging Information Utility!
+ Date and Time: 2024-05-16 at 07:50 AM
+ Operating System: nt Windows 10
+ System Architecture: 64bit
+ Number of CPUs: 12
+ Machine Type: AMD64
+ Python Version: 3.11.4
+ Python Build Date and Compiler: main with Jul  5 2023 13:47:18
+ Python Implementation: CPython
+ Active pip environment:   None
+ Active conda environment: None
+ Path to Interpreter:         C:\Users\Tower\anaconda3\envs\env\python.exe
+ Path to virtual environment: C:\Users\Tower\anaconda3\envs\env
+ Current Working Directory:   C:\Users\Tower\Documents\ACoffinCSIS44671\streaming-03-bonus-acoffin
+ Path to source directory:    c:\Users\Tower\Documents\ACoffinCSIS44671\streaming-03-bonus-acoffin\utils
+ Path to script file:         c:\Users\Tower\Documents\ACoffinCSIS44671\streaming-03-bonus-acoffin\utils\util_about.py
+ User's Home Directory:       C:\Users\Tower
+ Terminal Environment:        VS Code
+ Terminal Type:               cmd.exe
+ Preferred command:           python
+ Is python available in PATH:   True
+ Is git available in PATH:      True 
+======================================================================
+======================================================================
