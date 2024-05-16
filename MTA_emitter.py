@@ -1,4 +1,7 @@
 """
+Created by: A. C. Coffin
+May 2024
+
 Emitter designed to send a message to a queue on the RabbitMQ server. 
 Make sure the RabbitMQ server is on and connected.
 Run this and then run the listener.
@@ -13,6 +16,7 @@ import logging
 import random
 import pika.exceptions
 from util_logger import setup_logger
+
 # Configure logging
 logger, logname = setup_logger(__file__)
 

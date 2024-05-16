@@ -8,6 +8,18 @@ Dr. Case
 # Overview:
 Demonstrating the use of a message broker software, specifically RabbitMQ with MTA Subway Data. 
 
+## File List:
+| File Name | Repo location | Type |
+| ----- | ----- | -----|
+| util_about.py | utils folder | python script |
+| util_aboutenv.py | utils folder | python script |
+| util_logger.py | utils folder | python script |
+| MTA_emitter.log | logs | log |
+| requirements.txt | main repo | text |
+| MTAHourlyData50R.csv | main repo | csv |
+| MTA_emitter.py | main repo | python script |
+| MTA_listener.py | main repo | python script |
+
 # Table of Contents:
 1. [Machine Specs & Terminal Information](Machine_Specs_&_Terminal_Information:)
 2. [Prerequisites](Prerequisites:)
