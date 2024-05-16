@@ -47,22 +47,22 @@ def send_message(ns: str = "localhost"):
 
         # Declaring the queue
         ch.queue_declare(queue="MTA_task", durable=True)
-        
-        for message in stream_row('MTAHourlyData50R.csv'):
-            MTAData = ','.join(message)
-            # Converting Data to a string
-            message = f"{MTAData}"
+        while True: 
+            for message in stream_row('MTAHourlyData50R.csv'):
+                MTAData = ','.join(message)
+                # Converting Data to a string
+                message = f"{MTAData}"
 
-        # Publish to MTA_task
-        ch.basic_publish(
-            exchange = "",
-            routing_key="MTA_task",
-            body=message,
-            properties=pika.BasicProperties(content_type='text/plain', delivery_mode=2)
-        )
-        logging.info(f"[x] Sent '{message}'")
-        print(f" [x] sent {message}")
-        time.sleep(random.uniform(1, 8)) # random publishing between 1 and 8 seconds
+                # Publish to MTA_task
+                ch.basic_publish(
+                    exchange = "",
+                    routing_key="MTA_task",
+                    body=message,
+                    properties=pika.BasicProperties(content_type='text/plain', delivery_mode=2)
+                )
+                logging.info(f"[x] Sent '{message}'")
+                print(f" [x] sent {message}")
+                time.sleep(random.uniform(1, 8)) # random publishing between 1 and 8 seconds
     except KeyboardInterrupt:
         logging.info("KeyboardInterrupt. Stopping the program.")
     except pika.exceptions.AMQPConnectionError as e:
