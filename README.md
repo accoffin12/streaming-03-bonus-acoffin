@@ -9,18 +9,18 @@ Dr. Case
 Demonstrating the use of a message broker software, specifically RabbitMQ with MTA Subway Data. 
 
 # Table of Contents:
-1. [File List](File_List:)
-2. [Machine Specs & Terminal Information](Machine_Specs_&_Terminal_Information:)
-3. [Prerequisites](Prerequisites:)
-4. [Data Source](Data_Source:)
+1. [File List](File_List)
+2. [Machine Specs & Terminal Information](Machine_Specs_&_Terminal_Information)
+3. [Prerequisites](Prerequisites)
+4. [Data Source](Data_Source)
 5. [Creating Enviroment & Installs](Creating_an_Enviroment_&_Installs)
-6. [Method](Method:)
-    - [The Emitter/Producer](The_Emitter/Producer:)
-    - [The Listener/Consumer](The_Listener/Consumer:)
-7. [Results](Results:)
+6. [Method](Method)
+    - [The Emitter/Producer](The_Emitter/Producer)
+    - [The Listener/Consumer](The_Listener/Consumer)
+7. [Results](Results)
 
 
-# File List:
+# File List
 | File Name | Repo location | Type |
 | ----- | ----- | -----|
 | util_about.py | utils folder | python script |
@@ -37,7 +37,7 @@ Demonstrating the use of a message broker software, specifically RabbitMQ with M
 | MTA_outputfileMultiLineLoop.png | ScreenShots folder | PNG |
 
 
-# Machine Specs & Terminal Information:
+# Machine Specs & Terminal Information
 This project was created using a WindowsOS computer with the following Specs. These are not required to run this repository. For further detail on this machine go to the utils folder and open util_output folder to access util_about.txt. The util_about.py was created by NW Missouri State University and added to the repository to provide technical info.
 
     * Date and Time: 2024-05-16 at 07:50 AM
@@ -52,7 +52,7 @@ This project was created using a WindowsOS computer with the following Specs. Th
     * Terminal Type:               cmd.exe
     * Preferred command:           python
 
-# Prerequisites:
+# Prerequisites
 1. Git
 2. Python 3.7+ (3.11+ Preferred)
 3. VS Code Editor
@@ -61,17 +61,17 @@ This project was created using a WindowsOS computer with the following Specs. Th
 
 Be sure that RabbitMQ is installed and turn it on to run. For more information on RabbitMQ and it's installation plese see [RabbitMQ Home Page](https://www.rabbitmq.com/).
 
-# Data Source:
+# Data Source
 Annually millions of people utilize the NYC subways, and constant movement of the population around the city makes it an ideal source to create a fake data stream. The Metropolitan Transportation Authority is responsible for all public transport in New York City and collects data in batches by the hour. This batching creates counts for the number of passengers boarding a subway at a specific station. It also provides data concerning payment, geography, time, date and location of moving populations based on stations. MTA Data is commonly utilized when discussing population movements among districts and the role of public transport.
 
 MTA Data is readily available from New York State from their Portal.
 
 NYC MTA Data for Subways: https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data
 
-## Modifications of Data:
+## Modifications of Data
 The source contained 12 columns, however the MTAHourlyData50R.csv has 13 columns. In this instance the column originally called "transit_time" has been split, the source had both time and date in the same column. This was addressed by separating time and date into two specific columns, adding a 13th column. The data has also been trimmed from its total of 56.3 million rows to 50 rows. Additionally, time was converted to military time for the sake of loading into the database.
 
-# Creating an Enviroment & Installs:
+# Creating an Enviroment & Installs
 RabbitMQ requires the Pika Libarary in order to function, this is addressed through the creation of an enviroment and installing it. Use the following command to create an envrioment, when promted in VS Code set the .env to a workspace folder, select yes.
 
 ```
@@ -85,7 +85,7 @@ python -m pip install -r requirements.txt
 ```
 For more information on Pika see the [Pika GitHub](https://github.com/pika/pika)
 
-# Setup Verification:
+# Setup Verification
 To verify the set up of your enviroment run both util_about.py and util_aboutenv.py found in the util's folder or use the following commands in the terminal.
 These commands are structured for WindowsOS if using MacOS or Linux modify to have them function. Also be sure to run pip list in the terminal to check the Pika installation. 
 ```
@@ -93,10 +93,10 @@ python ".\\utils\util_about.py"
 python ".\\utils\util_aboutenv.py"
 pip list
 ```
-# Method: 
+# Method 
 In order to stream data utilizing RabbitMQ architecture we need to build both a Producer and Consumer. The Producer publishes the message, which in this case is being pulled from the MTA file that is in the repository. The Consumer decodes and recieves these messages. Both of these are essential to the process and in this case are structured to read from a csv and output a text file that can be stored later. 
 
-## The Emitter/Producer:
+## The Emitter/Producer
 The Emitter/Producer is a script that allows us to publish data to a queue that can then be recieved by the Consumer. In this particular case there are several steps required to properly stream the MTAHourlyData50R.csv file. These are as follows:
     1. Get the Data
     2. Read the Data
@@ -171,7 +171,9 @@ finally:
 ```
 The first exception allows for a quick escape using CTRL+C while the second serves as a way to stop the system in case of a failure to connect to RabbitMQ. `finally` dictates that after each of these functions has been exicuted the server conection can be closed after sending the data to the queue named MTA_task.
 
-### Adding the Loop:
+![Initial Run of Producer and Consumer](/ScreenShots/EmittingListeningSplit1.PNG)
+
+### Adding the Loop
 A loop was added so that more than a single line would be sent to the consumer. This means that if the emitter is not interupted that it will emit all 50 lines of the MTAHourlyData50R.csv file. By doing so it demonstrates the possiblity of a Producer continuously emitting different messages to the same queue for the same consumer to recieve so long as the rout_keys and queue names match. 
 
 The addition of the loop did alter the structure of the segment that establishes which task to exicute within the queue or what to do with data sent. 
@@ -199,7 +201,7 @@ This modification was made after both the MTA_emitter.py and MTA_Listener.py wer
 
 ![Producer, Consumer and output text](/ScreenShots/MTA_outputfileMultiLineLoop.PNG)
 
-## The Listener/Consumer:
+## The Listener/Consumer
 The Listener/Consumer serves to recieve data from the queue. In this instance however, the objective is to produce an output text file with the data from the MTAHourlyData50.csv. In order to do this several steps must occur:
     1. Creating an Output File
     2. Function to Process Messages from Queue
@@ -261,6 +263,8 @@ try:
         logger.info("\nClosing connection. Goodbye \n")
         connection.close()
 ```
-Similar to the emitter there are several Exceptions in place to both close the stream with a keyboard interruption or a logging error that the connection failed. Once each of these steps is completed the code may then exicute. 
+Similar to the emitter there are several Exceptions in place to both close the stream with a keyboard interruption or a logging error that the connection failed. Once each of these steps is completed the code may then exicute. The image depicts the initial output prior to the implimentation of the loop. See [Adding the Loop](Adding_the_Loop) for an example of the script recieivng multiple messages that were generated with the loop.
+
+![Run with Consumer and first Ouput](/ScreenShots/MTA_outputfile1.PNG)
 
 # Results:
