@@ -178,7 +178,7 @@ The first exception allows for a quick escape using CTRL+C, the second serves as
 ### Adding the Loop
 A loop was added so that multiple messages were sent to the consumer. This means that if the emitter is not interrupted, emits all 50 lines of the MTAHourlyData50R.csv file. It demonstrates the possibility of a Producer continuously emitting different messages to the same queue for the same consumer to receive so long as the rout_keys and queue names match. 
 
-The addition of the loop did alter the script structure that establishes which task to execute within the queue or what to do with the data sent. 
+The loop did alter the script structure that establishes which task to execute within the queue or what to do with the data sent. 
 ```
         # Creates a loop to emitt more than one message from the csv
         while True: 
@@ -268,7 +268,9 @@ Similar to the emitter, there are Exceptions in place to close the stream with a
 ![Run with Consumer and first Ouput](/ScreenShots/MTA_outputfile1.PNG)
 
 # Results and Challenges
-Streaming using RabbitMQ and the Pika library can be challenging to learn. The code must be structured in order to exicute properly and it is very easy for things to go arwy when tasks do not complete. This was demonstrated with this project when attempting to get the data to pull from the csv as an entire line, rather than a string of characters and integers. The solution was a series of functions and the use of `plain-text` when determining `content_type` and `delivery_mode=2` in combination with making the messages durable to both send the messages through the Producer and then later create an output file when utilizing the Consumer. 
+Streaming using RabbitMQ and the Pika library can be challenging to learn. The code must be structured to execute properly and it's easy for things to go awry when tasks do not complete. This was demonstrated with this project when attempting to get the data to pull from the csv as an entire line, rather than a string of characters and integers. The solution was a series of functions and the use of `plain-text` when determining `content_type` and `delivery_mode=2` in combination with making the messages durable for the Producer and then later creating an output file when utilizing the Consumer. Using a Loop enabled a stream of information from the MTAHourlyDataR50.csv through the queue and produced an output of the interaction. 
+
+Possible future applications of this project include applying a larger segment of data from the MTA and using this to generate information as to which stations and lines are busy and which are slower. Not all lines and stations will have the same demand, but data on population movements throughout the day in a metropolitan setting. These movements provide an understanding of urban structure, social interactions, pathogen spread, and more. 
 
 # Resources
 1. NYC Open Portal: https://data.ny.gov/Transportation/MTA-Subway-Hourly-Ridership-Beginning-February-202/wujg-7c2s/about_data
