@@ -4,6 +4,14 @@ May 2024
 
 Listener Developed for MTA Data using RabbitMQ.
 Always Transmit in one terminal and recieve in the other. 
+---
+
+This file will output a seperate file MTA_output.txt which cntains all of the transmission data sent from the emitter file.
+These will continue unless interupted using CNTL+C, because the emitter contains a loop for all 50 lines from the csv file. 
+If you wish to have unique outputs for each code run, change:
+
+output_file_name = "MTA_out.txt" 
+
 
 """
 

@@ -4,7 +4,12 @@ May 2024
 
 Emitter designed to send a message to a queue on the RabbitMQ server. 
 Make sure the RabbitMQ server is on and connected.
-Run this and then run the listener.
+Run this and then run the listener. 
+--
+
+This emitter contains a loop that will run through all 50 entries in the MTAHourlyData50R.csv file.
+The process can be interrupted using CTRL+C if an escape is needed. 
+
 """
 
 import pika
@@ -47,7 +52,9 @@ def send_message(ns: str = "localhost"):
 
         # Declaring the queue
         ch.queue_declare(queue="MTA_task", durable=True)
+        # Creates a loop to emitt more than one message from the csv
         while True: 
+            # Pulls data from the csv file and creates strings that can be read.
             for message in stream_row('MTAHourlyData50R.csv'):
                 MTAData = ','.join(message)
                 # Converting Data to a string
